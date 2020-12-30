@@ -11,12 +11,12 @@ module OpenProject::MockAuth
     extend OpenProject::Plugins::AuthPlugin
 
     register 'openproject-mock_auth',
-             :author_url => 'http://finn.de',
+             :author_url => 'http://grande.vn',
              :requires_openproject => '>= 3.1.0pre1'
 
     register_auth_providers do
       strategy :mock_auth do
-        [{name: 'mock_auth', display_name: 'Test'}]
+        [{name: 'mock_auth', display_name: 'Login with Microsoft'}]
       end
     end
   end
